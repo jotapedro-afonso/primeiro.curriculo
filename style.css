@@ -1,0 +1,79 @@
+
+
+
+h1{
+    color:white;
+    text-align: center;
+    
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.caixa {
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    max-width: 800px;
+    margin: px auto;      /* centraliza horizontalmente */
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1; 
+    height:100% ;
+    max-height: 800px;               /* faz a caixa ocupar o espaço disponível */
+}
+.meusCrusos {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+.meusCrusos:hover  {
+    transform: scale(1.1);
+}
+
+.projetos {
+    background-color: darkblue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ;
+}
+.projetos:hover {
+    transform: scale(1.1);
+
+}
+.formacao{
+    color: rgb(108, 11, 219);
+    font-weight: bold;
+  
+}
+.competencias{
+    color: rgb(108, 11, 219);
+    font-weight: bold;
+    
+}
+.objetivo{
+    color: rgb(108, 11, 219);
+    font-weight: bold;
+    
+}
+.curriculo{
+    color: rgb(108, 11, 219);
+    font-weight: bold;
+    font-style: italic; 
+    letter-spacing: 2px; /*Espaçamento das letras*/
+    text-shadow: 2px 2px 4px rgb(248, 12, 213); /*Sombreamento do texto*/
+    
+}
+
