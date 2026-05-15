@@ -3,35 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Aula-01</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+
     <link rel="stylesheet" href="style.css">
-    
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>gi
+<body>
 
-    <header>
-   <h1 class="curriculo">Meu Currículo</h1> 
-   
-    <!--Class usada para "separar", ai estilizo no CSS-->
-    
-    <div class="caixa">
-        <nav class="navbar">
-          <a href="#formacao">Formação</a>
-          <a href="#competencias">Competências</a>
-          <a href="#objetivo">Objetivo</a>
-        </nav>
-      </div>
-        
-   
-   
+    <div class="container">
 
-    <footer>
-        <p>© 2026 Meu Currículo Estruturado. Todos os direitos reservados.</p>
-    </footer>
+        <h1 class="titulo">Meu Currículo</h1>
 
-    </header>
- 
+        <div class="caixa">
+
+            <nav class="navbar">
+                <a href="#formacao">Formação</a>
+                <a href="#competencias">Competências</a>
+                <a href="#objetivo">Objetivo</a>
+            </nav>
+
+            <section id="formacao">
+                <h2>🎓 Formação</h2>
+
+                <p>
+                    Cursando Desenvolvimento de Sistemas na ETEC.
+                </p>
+
+                <button class="botao">Meus Cursos</button>
+            </section>
+
+            <section id="competencias">
+                <h2>💻 Competências</h2>
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>GitHub</li>
+                </ul>
+
+                <button class="botao">Projetos</button>
+            </section>
+
+            <section id="objetivo">
+                <h2>🚀 Objetivo</h2>
+
+                <p>
+                    Evoluir como desenvolvedor front-end e criar projetos modernos.
+                </p>
+            </section>
+
+        </div>
+
+        <footer>
+            <p class="footer">
+                © 2026 Meu Currículo - Todos os direitos reservados a João Pedro Oliveira Afonso
+            </p>
+        </footer>
+
+    </div>
+
 </body>
 
 </html>

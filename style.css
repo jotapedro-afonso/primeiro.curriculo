@@ -1,79 +1,161 @@
-
-
-
-h1{
-    color:white;
-    text-align: center;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: black;
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #050816,
+        #0b1026,
+        #12052e
+    );
+
+    min-height: 100vh;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
+
+    padding: 40px;
 }
-.caixa {
-    background-color: white;
-    text-align: left;
+
+/* CONTAINER */
+.container {
     width: 100%;
-    max-width: 800px;
-    margin: px auto;      /* centraliza horizontalmente */
-    padding: 20px;
-    border-radius: 20px;
-    flex: 1; 
-    height:100% ;
-    max-height: 800px;               /* faz a caixa ocupar o espaço disponível */
+    max-width: 900px;
 }
-.meusCrusos {
-    background-color: blue;
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+
+    color: #c084fc;
+
+    font-size: 3rem;
+
+    margin-bottom: 35px;
+
+    letter-spacing: 3px;
+
+    text-shadow:
+        0 0 10px #a855f7,
+        0 0 20px #9333ea;
+}
+
+/* CAIXA */
+.caixa {
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    border-radius: 25px;
+
+    padding: 40px;
+
+    box-shadow:
+        0 0 20px rgba(168,85,247,0.2);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+
+    margin-bottom: 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+
     color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+
+    font-weight: 600;
+
     transition: 0.3s;
-    
-}
-.meusCrusos:hover  {
-    transform: scale(1.1);
 }
 
-.projetos {
-    background-color: darkblue;
+.navbar a:hover {
+    color: #c084fc;
+
+    transform: translateY(-2px);
+}
+
+/* SEÇÕES */
+section {
+    margin-bottom: 40px;
+}
+
+/* SUBTÍTULOS */
+h2 {
+    color: #c084fc;
+
+    margin-bottom: 15px;
+
+    font-size: 1.6rem;
+}
+
+/* TEXTOS */
+p, li {
+    color: #d4d4d4;
+
+    line-height: 1.8;
+
+    font-size: 1rem;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* BOTÕES */
+.botao {
+    margin-top: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #9333ea
+    );
+
     color: white;
-    padding: 10px 20px;
+
     border: none;
-    border-radius: 8px;
+
+    padding: 12px 24px;
+
+    border-radius: 12px;
+
+    font-weight: bold;
+
     cursor: pointer;
-    transition: 0.3s ;
-}
-.projetos:hover {
-    transform: scale(1.1);
 
-}
-.formacao{
-    color: rgb(108, 11, 219);
-    font-weight: bold;
-  
-}
-.competencias{
-    color: rgb(108, 11, 219);
-    font-weight: bold;
-    
-}
-.objetivo{
-    color: rgb(108, 11, 219);
-    font-weight: bold;
-    
-}
-.curriculo{
-    color: rgb(108, 11, 219);
-    font-weight: bold;
-    font-style: italic; 
-    letter-spacing: 2px; /*Espaçamento das letras*/
-    text-shadow: 2px 2px 4px rgb(248, 12, 213); /*Sombreamento do texto*/
-    
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px rgba(168,85,247,0.4);
 }
 
+.botao:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 20px rgba(168,85,247,0.8);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #888;
+
+    font-size: 0.9rem;
+}
